@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ぽぽんた市場</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="むかわ町の特産物直売所 ぽぽんた市場。その日に収穫したものを、その日に。年末年始以外は毎日営業、10:00〜17:00。">
@@ -31,6 +36,9 @@
   --leaf:#93C27A;--haskap:#C7A8E0;--berry:#F0817A;--sun:#F3C860;--board:#24382A;--board-ink:#F0EEDF;--line:#38432F;color-scheme:dark}
 
 *{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0}
+img{max-width:100%}
 body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:4px}
@@ -172,9 +180,37 @@ table.shop th{width:7.5em;font-weight:700;color:var(--ink-soft);font-size:.85rem
 footer{border-top:1px solid var(--line);padding-block:28px;font-size:.82rem;color:var(--ink-soft)}
 footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
+/* スマホ表示：文字を大きく、カードは1列に */
+@media (max-width:600px){
+  body{font-size:17px;line-height:1.9}
+  .logo b{font-size:1.25rem}
+  .logo small{font-size:.8rem}
+  .hero-copy p{font-size:1.02rem}
+  .strip dt{font-size:.85rem}
+  .strip dd{font-size:1.08rem}
+  section{padding-block:48px}
+  .pop-grid{grid-template-columns:1fr;gap:20px}
+  .pop{padding:22px 20px 18px}
+  .pop .cat{font-size:.82rem}
+  .pop h3{font-size:1.55rem}
+  .pop p{font-size:1rem;padding-right:52px}
+  .three span{font-size:.88rem}
+  .since,.items-note{font-size:.95rem}
+  .chalk-list li{font-size:1.12rem}
+  .sns-card{padding:18px;gap:14px}
+  .sns-card .handle{font-size:.92rem}
+  .sns-card p{font-size:.98rem}
+  table.shop{font-size:1rem}
+  table.shop th{width:6em;font-size:.9rem}
+  .route{font-size:1rem}
+  .access p{font-size:1rem!important}
+  .btn{font-size:1rem;padding:12px 20px}
+  footer{font-size:.9rem}
+}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}.pop{transform:none}}
 </style>
-
+</head>
+<body>
 <header class="site">
   <div class="wrap">
     <a class="logo" href="#top" aria-label="ぽぽんた市場 トップへ">
@@ -379,3 +415,5 @@ document.getElementById("copy-tel").addEventListener("click", function(e){
   }
 });
 </script>
+</body>
+</html>
