@@ -230,6 +230,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .festival-poster a{display:block}
 .festival-poster img{display:block;width:100%;height:auto;border-radius:8px}
 .festival-poster figcaption{font-size:.8rem;color:var(--ink-soft);margin-top:8px}
+/* 旬の話題：2026年11月1日 ししゃもの日（文字のみの告知） */
+.festival-card-text{grid-template-columns:1fr;max-width:760px;margin-inline:auto}
+.festival-gift{background:var(--paper-2);border-radius:12px;padding:14px 18px;margin:16px 0;font-weight:700;line-height:1.6}
+.festival-card-text .nobr{display:inline-block}
+.festival-gift strong{font-family:var(--f-display);font-size:clamp(1.3rem,3vw,1.8rem);color:var(--berry)}
 @media(max-width:680px){.festival-card{grid-template-columns:1fr;gap:24px}.festival-poster{max-width:360px;width:100%;margin-inline:auto}.festival{padding-top:20px}}
 
 </style>
@@ -259,41 +264,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
   <section class="festival" id="seasonal" aria-labelledby="festival-title">
     <div class="wrap">
-      <div class="festival-card">
+      <div class="festival-card festival-card-text">
         <div>
-          <p class="festival-kicker">旬の話題 ／ 秋のイベント</p>
-          <h2 id="festival-title">解禁!! ししゃもまつり</h2>
-          <p class="festival-date"><time datetime="2026-10-24">2026年10月24日（土）</time><br>10:00〜14:00</p>
-          <p class="festival-place">会場：ぽぽんた市場 駐車場</p>
-          <p class="festival-intro">鵡川ししゃもは今が旬！ 本場「北海道むかわ町」のししゃもの味を堪能しませんか。数量限定のししゃも料理に、特産品の販売、音楽ステージも楽しめる一日です。</p>
-          <div class="festival-foods" aria-label="数量限定メニュー"><span>焼きししゃも</span><span>ししゃも寿司</span><span>ししゃも汁</span></div>
-          <a class="btn btn-line" href="#info">会場へのアクセス</a>
-          <details>
-            <summary>販売時間・ステージの詳細を見る</summary>
-            <h3>数量限定のししゃも料理</h3>
-            <ul>
-              <li><strong>焼きししゃも：限定300食</strong>（オス・メス各1尾）<br>10:00から、なくなり次第終了。</li>
-              <li><strong>ししゃも寿司：限定300食</strong>（3カン）<br>1回目 11:00／150食、2回目 12:30／150食。</li>
-              <li><strong>ししゃも汁：限定200食</strong><br>1回目 10:00／100食、2回目 12:00／100食。</li>
-            </ul>
-            <h3>音楽ステージ</h3>
-            <ul>
-              <li>10:00〜 オープニングアクト：鵡川高校吹奏楽 × 吹奏楽を愛する愉快な仲間たち</li>
-              <li>12:00〜 ambitious（アンビシャス）ライブ</li>
-              <li>13:00〜 トクナリ ライブ（MC＆ステージ）</li>
-            </ul>
-            <h3>おいしいものが集まるブース</h3>
-            <p class="festival-intro">ぽぽんた市場特設ブースでは特産品・美味しいものを販売。なかよし市町村ブースには、日高町のタコザンギ、平取町のサイコロステーキ、旭川市の新子焼きが並びます。</p>
-          </details>
-          <p class="festival-contact">お問い合わせ：むかわ町観光協会<br><a href="tel:0145472480">0145-47-2480</a></p>
-          <p class="festival-note">掲載内容はイベントチラシに基づきます。数量限定メニューの販売時間は上記の詳細をご確認ください。</p>
+          <p class="festival-kicker">旬の話題 ／ 11月のお知らせ</p>
+          <h2 id="festival-title"><span class="nobr">11月1日は</span><span class="nobr">「ししゃもの日」</span></h2>
+          <p class="festival-date"><time datetime="2026-11-01">2026年11月1日（日）</time></p>
+          <p class="festival-gift">おひとり様1本<br><strong><span class="nobr">ししゃも珍味を</span><span class="nobr">プレゼント！</span></strong></p>
+          <p class="festival-intro">11月1日の「ししゃもの日」に、ご来店のお客様へししゃも珍味をおひとり様1本プレゼントします。むかわ町自慢のししゃもを味わいに、ぜひぽぽんた市場へお越しください。</p>
+          <a class="btn btn-line" href="#info">店舗へのアクセス</a>
         </div>
-        <figure class="festival-poster">
-          <a href="shishamo-festival-20261024.jpg" target="_blank" rel="noopener" aria-label="ししゃもまつりのチラシを大きく見る（新しいタブ）">
-            <img src="shishamo-festival-20261024.jpg" alt="2026年10月24日（土）10時から14時、ぽぽんた市場駐車場で開催する『解禁!! ししゃもまつり』のチラシ" width="886" height="1280">
-          </a>
-          <figcaption>チラシをタップすると大きく表示できます</figcaption>
-        </figure>
       </div>
     </div>
   </section>
@@ -483,4 +462,4 @@ document.getElementById("copy-tel").addEventListener("click", function(e){
 });
 </script>
 </body>
-</html>
+</html>
